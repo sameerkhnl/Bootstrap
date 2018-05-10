@@ -2,3 +2,27 @@
     padding: 3px;
     width: 100%;
 }
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: "|";
+}
+
+.breadcrumb {
+    background-color: #ffd800;
+}
+
+.breadcrumb-item.active {
+    color: #ff0000;
+}
+
+.customProgressBar{
+    background-color: #e0a800;
+}
+
+.divStyle{
+    padding-top: 40px;
+}
+
+.divStyle.firstDiv{
+    padding-top: 0;
+}

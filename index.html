@@ -10,88 +10,117 @@
     <link rel="stylesheet" href="css/customstyles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css"
           integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/" crossorigin="anonymous">
-</head>
-<body>
-
-
-<div class="container">
-    <div class="container">
+    <style type="text/css">
+        body {
+            position: relative;
+        }
         
-        <div class="row">
-            <div class="col-xs-3 col-lg-6">
-                <form>
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control">
-                        <div class="input-group-append">
-                            <button class="btn btn-outline-secondary dropdown-toggle" type="button"
-                                    data-toggle="dropdown">Dropdown
-                            </button>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Action1</a>
-                                <a class="dropdown-item" href="#">Action2</a>
-                                <a class="dropdown-item" href="#">Action3</a>
-                                <div class="dropdown-divider" role="separator">
-                                
-                                </div>
-                                <a class="dropdown-item" href="#">Action4</a>
-                            </div>
-                        
-                        </div>
-                    </div>
-                    
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control">
-                        <div class="input-group-append">
-                            <button class="btn btn-outline-secondary" type="button">Action</button>
-                            <button class="btn btn-outline-secondary dropdown-toggle" type="button"
-                                    data-toggle="dropdown"></button>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Action1</a>
-                                <a class="dropdown-item" href="#">Action2</a>
-                                <a class="dropdown-item" href="#">Action3</a>
-                                <div class="dropdown-divider" role="separator">
-                                
-                                </div>
-                                <a class="dropdown-item" href="#">Action4</a>
-                            </div>
-                        
-                        </div>
-                    </div>
-                    
-                    <div class="input-group mb-3">
-                        <input class="form-control" type="text">
-                        <div class="input-group-append">
-                            <button class="btn btn-outline-secondary" type="button">Cut</button>
-                            <button class="btn btn-outline-secondary" type="button">Copy</button>
-                            <button class="btn btn-outline-secondary" type="button">Paste</button>
-                        </div>
-                    </div>
-                    
-                    <div class="input-group mb-3">
-                        <input class="form-control" type="text">
-                        <div class="input-group-append">
-                            <button class="btn btn-outline-secondary"><i class="fas fa-align-left"></i>
-                            </button>
-                            <button class="btn btn-outline-secondary"><i class="fas fa-align-center"></i>
-                            </button>
-                            <button class="btn btn-outline-secondary"><i class="fas fa-align-right"></i>
-                            </button>
-                        </div>
-                    </div>
-                </form>
+        #mainNavbar {
+            position: fixed;
+            top: 20px;
+        }
+    </style>
+</head>
+<body data-spy="scroll">
+
+<div class="container mt-4">
+    <div class="row">
+        
+        
+        <div class="col-9">
+            <div class="divStyle firstDiv" id="divClouds">
+                <h4>Above the clouds</h4>
+                <img src="images/above-the-clouds.jpeg" class="img-fluid">
+            </div>
+            <div class="divStyle" id="divBrick">
+                <h4>Brick factory</h4>
+                <img src="images/brick-factory.jpeg" class="img-fluid">
+            </div>
+            <div class="divStyle" id="divDesert">
+                <h4>Desert storm</h4>
+                <img src="images/desert-storm.jpeg" class="img-fluid">
+            </div>
+            <div class="divStyle" id="divHaze">
+                <h4>Golden haze</h4>
+                <img src="images/golden-haze.jpeg" class="img-fluid">
+            </div>
+            <div class="divStyle" id="divIcelandic">
+                <h4>Icelandic sunrise</h4>
+                <img src="images/icelandic-sunrise.jpeg" class="img-fluid">
+            </div>
+            <div class="divStyle" id="divWave">
+                <h4>New wave</h4>
+                <img src="images/new-wave.jpeg" class="img-fluid">
+            </div>
+            <div class="divStyle" id="divSunset">
+                <h4>Sunset soccer</h4>
+                <img src="images/sunset-soccer.jpeg" class="img-fluid">
+            </div>
+            <div class="divStyle" id="divTea">
+                <h4>Tea house</h4>
+                <img src="images/tea-house.jpeg" class="img-fluid">
+            </div>
+            <div class="divStyle" id="divLonghorn">
+                <h4>Texas longhorn</h4>
+                <img src="images/texas-longhorn.jpeg" class="img-fluid">
             </div>
         </div>
-    
-    
+        <div class="col-3">
+            <nav id="mainNavbar" class="navbar navbar-light bg-light">
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#divClouds" style="color: #6610f2;">Above the clouds</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#divBrick" style="color: #6610f2;">Brick factory</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#divDesert" style="color: #6610f2;">Desert storm</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#divHaze" style="color: #6610f2;">Golden haze</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                           style="color: #6610f2;">Others
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#divIcelandic">Icelandic sunrise</a>
+                            <a class="dropdown-item" href="#divWave">New wave</a>
+                            <a class="dropdown-item" href="#divSunset">Sunset soccer</a>
+                            <div class="dropdown-divider" role="separator"></div>
+                            <a class="dropdown-item" href="#divTea">Tea house</a>
+                            <a class="dropdown-item" href="#divLonghorn">Texas-longhorn</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </div>
 </div>
-</div>
-</div>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://unpkg.com/popper.js@1.14.3/dist/umd/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 
+<script type="text/javascript">
+    $('#btnSubmit').click(function () {
+        $('#myAlert').show('fade');
+        window.setTimeout(function () {
+            $('#myAlert').hide('fade');
+        }, 2000);
+    });
+
+    $('#link-close').click(function () {
+        $('#myAlert').hide('fade');
+    });
+
+    $('body').scrollspy({
+        target: '#mainNavbar',
+        offset: 100
+    });
+</script>
 
 </body>
 </html>
